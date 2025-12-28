@@ -4,13 +4,16 @@ from pathlib import Path
 
 def wait_until_stable(
     path: Path,
-    check_interval: float = 0.2,
-    stable_checks: int = 3,
-    timeout: float = 10.0,
+    conf,
+    
 ) -> bool:
     """
     Returns True if file becomes stable, False if timeout or file disappears.
     """
+    check_interval = conf["check_interval"]
+    stable_checks = conf["stable_checks"]
+    timeout = conf["timeout"]
+    
     start = time.time()
     last_size = -1
     same_count = 0
