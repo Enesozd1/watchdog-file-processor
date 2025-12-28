@@ -11,6 +11,9 @@ class IncompleteJson(Exception):
 REQUIRED_KEYS = [
     "watch_path",
     "processed_path",
+    "check_interval",
+    "stable_checks",
+    "timeout",
     "dry_run",
     "log_file",
     "log_level",

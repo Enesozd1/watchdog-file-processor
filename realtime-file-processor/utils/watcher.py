@@ -42,7 +42,7 @@ class DebouncedHandler(FileSystemEventHandler):
 
             if event_type in {"create", "modify", "move"}:
                 logging.info(f"[WAIT] Checking stability: {effective_path.name}")
-                if not wait_until_stable(effective_path):
+                if not wait_until_stable(effective_path,conf=self.conf):
                     logging.warning(f"[Skip] File not stable or vanished: {effective_path.name}")
                     return
 
@@ -93,7 +93,7 @@ class DebouncedHandler(FileSystemEventHandler):
 
 def watch(path: Path, conf, recursive: bool = True):
     observer = Observer()
-    handler = DebouncedHandler(conf,conf["debounce_seconds"])
+    handler = DebouncedHandler(conf,debounce_seconds=0.8)
     observer.schedule(handler, str(path), recursive=recursive)
     observer.start()
 
