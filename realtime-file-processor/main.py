@@ -3,7 +3,6 @@ import logging
 
 from utils.config_loader import load_config, IncompleteJson
 from utils.logging_setup import setup_logging
-from utils.zipping import Zip
 from utils.watcher import watch
 
 
