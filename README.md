@@ -36,7 +36,7 @@ Example configuration:
 ## Configuration Parameters
 
 * watch_path -> Path to the folder that will be monitored for incoming files. Can be an absolute path or a path relative to the project root.
-* processed_path -> Destination folder where processed files will be moved.If the path is relative, it will be resolved relative to the project root.
+* processed_path -> Destination folder where processed files will be moved. If the path is relative, it will be resolved relative to the project root.
 * dry_run -> When set to true, no files or folders are created or moved. All actions are logged as "would do" operations.
 * recursive -> When true, subfolders inside the watched directory are also monitored. When false, only the top-level folder is watched.
 * log_file -> Path to the log file where all activity is recorded.
