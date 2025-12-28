@@ -1,7 +1,6 @@
 # Watchdog File Processor
 
 This project is a Python based folder‑watching automation tool that monitors a target directory and automatically organizes new files into a structured output location.
-It is designed to be safe, configurable, and resilient to partial writes, rapid changes, and common filesystem issues.
 
 ---
 
