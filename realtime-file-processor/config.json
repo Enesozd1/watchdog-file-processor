@@ -1,0 +1,10 @@
+{
+  "watch_path": "Incoming",
+  "processed_path": "processed",
+
+  "dry_run": false,
+  "recursive": false,
+  
+  "log_file": "watch_folder.log",
+  "log_level": "INFO"
+}
