@@ -4,6 +4,11 @@
 
   "dry_run": false,
   "recursive": false,
+
+  "check_interval": 0.2,
+  "stable_checks": 3,
+  "timeout": 10.0,
+
   
   "log_file": "watch_folder.log",
   "log_level": "INFO"
