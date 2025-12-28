@@ -1,11 +1,7 @@
 # Watchdog File Processor
 
-This project is a folder-watching automation tool built with Python and watchdog.
-
-It continuously monitors a target directory for file events and automatically processes new files by moving them into a structured processed directory. 
-The program is designed to be safe, configurable, and robust against partial writes, rapid file changes, and common filesystem errors.
-
-The tool supports dry-run mode, recursive watching, debouncing, and detailed logging.
+This project is a Python-based folder‑watching automation tool that monitors a target directory and automatically organizes new files into a structured output location.
+It is designed to be safe, configurable, and resilient to partial writes, rapid changes, and common filesystem issues.
 
 ---
 
@@ -40,12 +36,12 @@ Example configuration:
 ```
 ## Configuration Parameters
 
-* watch_path -Path to the folder that will be monitored for incoming files. Can be an absolute path or a path relative to the project root.
-* processed_path -Destination folder where processed files will be moved.If the path is relative, it will be resolved relative to the project root.
-* dry_run -When set to true, no files or folders are created or moved. All actions are logged as "would do" operations.
-* recursive -When true, subfolders inside the watched directory are also monitored. When false, only the top-level folder is watched.
-* log_file -Path to the log file where all activity is recorded.
-* log_level -Logging verbosity level. Common values are: INFO, WARNING, ERROR, DEBUG
+* watch_path -> Path to the folder that will be monitored for incoming files. Can be an absolute path or a path relative to the project root.
+* processed_path -> Destination folder where processed files will be moved.If the path is relative, it will be resolved relative to the project root.
+* dry_run -> When set to true, no files or folders are created or moved. All actions are logged as "would do" operations.
+* recursive -> When true, subfolders inside the watched directory are also monitored. When false, only the top-level folder is watched.
+* log_file -> Path to the log file where all activity is recorded.
+* log_level -> Logging verbosity level. Common values are: INFO, WARNING, ERROR, DEBUG
 
 ## How to Run
 - Create and activate a virtual environment (recommended)
