@@ -131,7 +131,7 @@ def route_file(path: Path, conf: dict, category: str) -> Path | None:
     if dest_path.exists():
         i=1
         while True:
-            candidate = category_dir / f"{path.stem} ({i}){path.suffix}"
+            candidate = category_dir / f"{path.stem}({i}){path.suffix}"
             if not candidate.exists():
                 dest_path = candidate
                 break
