@@ -8,7 +8,7 @@ This project is a Python based folder‑watching automation tool that monitors a
 
 - Watches a directory for file creation, modification, movement, and deletion events
 - Waits until files are stable before processing them
-- Moves files into a processed directory
+- Moves files into a processed directory -> categorized by extension
 - Logs all actions and errors
 - Can run in dry-run mode to preview behavior without modifying the filesystem
 
